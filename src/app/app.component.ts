@@ -18,7 +18,6 @@ interface Post {
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
-  name = 'Angular';
   posts: Post = data.data.children.map((child) => child.data);
   constructor(){
     console.log(this.posts[0])
