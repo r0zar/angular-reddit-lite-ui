@@ -1,19 +1,23 @@
 <ul>
   <li *ngFor="let post of posts; let i = index" class="flex-row">
     <div class="score-wrapper">
-      <i class="fas fa-arrow-alt-circle-up"></i>
+      <i class="fas fa-arrow-alt-circle-up button" (click)=log()></i>
       <span class="score">{{post.score}}</span>
-      <i class="fas fa-arrow-alt-circle-up fa-rotate-180"></i> 
+      <i class="fas fa-arrow-alt-circle-up button fa-rotate-180"></i> 
     </div>
     <div class="left-button-wrapper">
-      <i class="fas fa-image"></i> 
+      <div class="primary button">
+        <i class="fas fa-image"></i>
+      </div> 
     </div>
     <div class="body-wrapper">
       {{post.title}}
     </div>
     <div class="right-button-wrapper">
-      <i class="fas fa-comment-alt"></i>
-      {{post.num_comments}}
+      <div class="comments button">
+        <i class="fas fa-comment-alt"></i>
+        {{post.num_comments}}
+      </div>
     </div>
   </li>
 </ul>

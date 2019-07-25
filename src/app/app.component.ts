@@ -23,4 +23,5 @@ export class AppComponent  {
   constructor(){
     console.log(this.posts[0])
   }
+  log = () => console.log('!')
 }

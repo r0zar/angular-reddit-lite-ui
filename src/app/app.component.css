@@ -1,14 +1,15 @@
 * {
-  font-family: Lato;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
 li {
-  margin: 1px;
+  margin: 0.1rem;
   background: whitesmoke;
 }
 
+
 li:hover {
-  border: 1px solid gray;
+  border: 0.01rem solid gray;
 }
 
 .flex-row {
@@ -20,10 +21,11 @@ li:hover {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  padding: 0.3rem 0.3rem;
 }
 
 .score-wrapper {
-  width: 5.5rem;
+  width: 7rem;
   display: flex;
   justify-content: space-between;
 }
@@ -32,19 +34,25 @@ li:hover {
   width: 60%;
   text-justify: left;
   text-overflow: ellipsis;
+  align-self: center
 }
 
 .left-button-wrapper {
-  width: 1.4rem;
 }
+
 .right-button-wrapper {
-  width: 3.5rem;
+  width: 5rem;
 }
 
 .body-wrapper {
   flex: 12;
+  align-self: center
 }
 
 .fas, .far, .fab {
-  padding: 2px;
+  padding: 0.4rem;
+}
+
+.button:hover {
+  background: rgb(216, 216, 216);
 }
