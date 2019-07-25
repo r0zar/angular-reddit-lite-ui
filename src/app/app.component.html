@@ -1,21 +1,24 @@
 <ul>
   <li *ngFor="let post of posts; let i = index" class="flex-row">
     <div class="score-wrapper">
-      <div (click)=log()><i class="fas fa-arrow-alt-circle-up button"></i></div>
+      <div (click)=upvote(post)><i class="fas fa-arrow-alt-circle-up button upvote"></i></div>
       <span class="score">{{post.score}}</span>
-      <div (click)=log()><i class="fas fa-arrow-alt-circle-up fa-rotate-180 button"></i></div>
+      <div (click)=downvote(post)><i class="fas fa-arrow-alt-circle-up fa-rotate-180 button downvote"></i></div>
     </div>
     <div class="left-button-wrapper">
       <div class="primary button" (click)=log()>
         <i class="fas fa-image"></i>
       </div> 
     </div>
-    <div class="body-wrapper" (click)=log()>
-      <div>{{post.title}}</div>
+    <div class="body-wrapper">
+      <div (click)=goToReddit(post.permalink)>
+        {{post.title}}
+        <a class="external-url" (click)=goTo(post.url);$event.stopPropagation()>{{post.url}}<i class="fas fa-external-link-alt"></i></a>
+      </div>
       <div class="sub-text">Posted by {{post.author}} {{post.created | date}}</div>
     </div>
     <div class="right-button-wrapper">
-      <div class="comments button" (click)=log()>
+      <div class="comments button" (click)=goToReddit(post.permalink)>
         <i class="fas fa-comment-alt"></i>
         {{post.num_comments}}
       </div>

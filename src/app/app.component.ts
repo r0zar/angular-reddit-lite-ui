@@ -24,4 +24,12 @@ export class AppComponent  {
     console.log(this.posts[0])
   }
   log = () => console.log('!')
+  goToReddit = (url) => {
+    window.location.href = 'https://reddit.com'+url;
+  }
+  goTo = (url) => {
+    window.location.href = url;
+  }
+  upvote = (post) => post.score += 1
+  downvote = (post) => post.score -= 1
 }

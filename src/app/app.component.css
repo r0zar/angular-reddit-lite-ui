@@ -48,7 +48,8 @@ li:hover {
 
 .body-wrapper {
   flex: 12;
-  align-self: center
+  align-self: center;
+  font-size: 0.9rem;
 }
 
 .body-wrapper:hover {
@@ -72,4 +73,21 @@ li:hover {
 .sub-text {
   font-size: 0.8rem;
   color: gray;
+}
+
+.external-url {
+  font-size: 0.7rem;
+  color: rgb(63, 176, 241);
+}
+
+.external-url:hover {
+  text-decoration: underline;
+}
+
+.upvote:hover {
+  color: red;
+}
+
+.downvote:hover{
+  color: blue;
 }
