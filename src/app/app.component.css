@@ -3,13 +3,12 @@
 }
 
 li {
-  margin: 0.1rem;
+  margin: 0 0.1rem;
   background: whitesmoke;
 }
 
-
 li:hover {
-  border: 0.01rem solid gray;
+  border: 1px solid gray;
 }
 
 .flex-row {
@@ -28,17 +27,20 @@ li:hover {
   width: 7rem;
   display: flex;
   justify-content: space-between;
+  align-content: initial;
+  background: rgb(230, 229, 229);
 }
 
 .score {
   width: 60%;
   text-justify: left;
   text-overflow: ellipsis;
-  align-self: center
+  align-self: top;
+  padding: 0.15rem 0.1rem;
 }
 
-.left-button-wrapper {
-}
+/* .left-button-wrapper {
+} */
 
 .right-button-wrapper {
   width: 5rem;
@@ -49,10 +51,25 @@ li:hover {
   align-self: center
 }
 
+.body-wrapper:hover {
+  cursor: pointer;
+}
+
 .fas, .far, .fab {
   padding: 0.4rem;
 }
 
+.button {
+  align-self: top;
+}
+
 .button:hover {
-  background: rgb(216, 216, 216);
+  background: rgb(207, 207, 207);
+  border-radius: 0.1rem;
+  cursor: pointer;
+}
+
+.sub-text {
+  font-size: 0.8rem;
+  color: gray;
 }

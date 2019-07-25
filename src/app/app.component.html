@@ -1,9 +1,9 @@
 <ul>
   <li *ngFor="let post of posts; let i = index" class="flex-row">
     <div class="score-wrapper">
-      <i class="fas fa-arrow-alt-circle-up button" (click)=log()></i>
+      <div (click)=log()><i class="fas fa-arrow-alt-circle-up button"></i></div>
       <span class="score">{{post.score}}</span>
-      <i class="fas fa-arrow-alt-circle-up button fa-rotate-180" (click)=log()></i> 
+      <div (click)=log()><i class="fas fa-arrow-alt-circle-up fa-rotate-180 button"></i></div>
     </div>
     <div class="left-button-wrapper">
       <div class="primary button" (click)=log()>
@@ -11,7 +11,8 @@
       </div> 
     </div>
     <div class="body-wrapper" (click)=log()>
-      {{post.title}}
+      <div>{{post.title}}</div>
+      <div class="sub-text">Posted by {{post.author}} {{post.created | date}}</div>
     </div>
     <div class="right-button-wrapper">
       <div class="comments button" (click)=log()>
