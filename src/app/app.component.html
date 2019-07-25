@@ -3,18 +3,18 @@
     <div class="score-wrapper">
       <i class="fas fa-arrow-alt-circle-up button" (click)=log()></i>
       <span class="score">{{post.score}}</span>
-      <i class="fas fa-arrow-alt-circle-up button fa-rotate-180"></i> 
+      <i class="fas fa-arrow-alt-circle-up button fa-rotate-180" (click)=log()></i> 
     </div>
     <div class="left-button-wrapper">
-      <div class="primary button">
+      <div class="primary button" (click)=log()>
         <i class="fas fa-image"></i>
       </div> 
     </div>
-    <div class="body-wrapper">
+    <div class="body-wrapper" (click)=log()>
       {{post.title}}
     </div>
     <div class="right-button-wrapper">
-      <div class="comments button">
+      <div class="comments button" (click)=log()>
         <i class="fas fa-comment-alt"></i>
         {{post.num_comments}}
       </div>
