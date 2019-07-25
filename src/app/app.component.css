@@ -1,0 +1,50 @@
+* {
+  font-family: Lato;
+}
+
+li {
+  margin: 1px;
+  background: whitesmoke;
+}
+
+li:hover {
+  border: 1px solid gray;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex-row > div {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.score-wrapper {
+  width: 5.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.score {
+  width: 60%;
+  text-justify: left;
+  text-overflow: ellipsis;
+}
+
+.left-button-wrapper {
+  width: 1.4rem;
+}
+.right-button-wrapper {
+  width: 3.5rem;
+}
+
+.body-wrapper {
+  flex: 12;
+}
+
+.fas, .far, .fab {
+  padding: 2px;
+}
