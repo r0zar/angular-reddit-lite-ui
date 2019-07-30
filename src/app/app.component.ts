@@ -18,7 +18,7 @@ interface Post {
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
-  posts: Post = data.data.children.map((child) => child.data);
+  posts: Post[] = data.data.children.map((child) => child.data);
   constructor(){
     console.log(this.posts[0])
   }
